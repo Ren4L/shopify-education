@@ -1,0 +1,24 @@
+<div>
+    <h1>{{ section.message }}</h1>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.test.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Message",
+      "default": "Hello!"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.test.name"
+    }
+  ]
+}
+{% endschema %}
