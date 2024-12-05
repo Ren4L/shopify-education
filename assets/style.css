@@ -9,14 +9,12 @@
   padding: 96px 15%;
   font-size: 90px;
 }
-
 .mission--container h1 {
   font-size: 1em;
   text-align: left;
   font-family: "Alata", sans-serif;
   font-weight: 400;
 }
-
 .mission--container h1::after {
   content: "";
   display: block;
@@ -33,12 +31,10 @@
   font-size: 1em;
   margin-top: 56px;
 }
-
 .mission--image--text--container img {
   display: flex;
   width: 400px;
 }
-
 .mission--image--text--container .text {
   font-size: 0.188em;
   font-family: "Sofia Pro", sans-serif;
@@ -63,19 +59,16 @@
   justify-content: flex-start;
   font-size: 1em;
 }
-
 .mission--block img {
   margin-bottom: 16px;
 }
-
-.mission--block .title {
+.mission--block--title {
   font-family: "Sofia Pro", sans-serif;
   font-weight: 700;
   font-size: 0.45em;
   margin-bottom: 8px;
 }
-
-.mission--block .content {
+.mission--block--content {
   font-family: "Sofia Pro", sans-serif;
   font-weight: 300;
   font-size: 0.14em;
@@ -89,12 +82,12 @@
   .mission--image--text--container {
     flex-direction: column;
   }
-  .mission--container .text {
-    margin: 32px 0 0 0 !important;
-  }
   .missions--container {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .missions--container .text {
+    margin: 32px 0 0 0 !important;
   }
 }
 @media (max-width: 850px) {
@@ -105,7 +98,7 @@
     line-height: 24px;
     font-size: 0.25em;
   }
-  .mission--block .content {
+  .mission--block .mission--block--content {
     font-size: 0.25em;
   }
 }
@@ -119,6 +112,10 @@
     font-size: 40px;
     padding: 56px 15px;
   }
+  .mission--container .text {
+    line-height: 24px;
+    font-size: 0.35em;
+  }
   .mission--container h1::after {
     width: 70px;
     padding-top: 32px;
@@ -127,17 +124,13 @@
   .mission--image--text--container img {
     width: 100%;
   }
-  .mission--container .text {
-    line-height: 24px;
-    font-size: 0.35em;
-  }
   .mission--block {
     width: 120px;
   }
-  .mission--block .title {
+  .mission--block--title {
     font-size: 0.8em;
   }
-  .mission--block .content {
+  .mission--block--content {
     font-size: 0.3em;
     line-height: 16px;
   }
