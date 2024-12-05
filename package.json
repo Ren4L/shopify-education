@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.49",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.3",
+    "scss": "^0.2.4",
+    "webpack": "^5.97.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,151 @@
+.mission--container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 15%;
+  font-size: 90px;
+}
+
+.mission--container h1{
+  font-size: 1em;
+  text-align: left;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.mission--container h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 48px;
+  border-bottom: 6px solid rgba(249, 208, 35, 1);
+}
+
+.mission--image--text--container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 56px;
+}
+
+
+.mission--image--text--container img{
+  display: flex;
+  width: 400px;
+}
+
+.mission--image--text--container .text{
+  font-size: 0.188em;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-left: 55px;
+}
+
+.missions--container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 96px;
+}
+
+.mission--block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1em;
+}
+
+.mission--block img{
+  margin-bottom: 16px;
+}
+
+.mission--block .title{
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 700;
+  font-size: 0.45em;
+  margin-bottom: 8px;
+}
+
+.mission--block .content{
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 300;
+  font-size: 0.14em;
+  color: rgba(11, 13, 33, 1);
+  text-align: center;
+  line-height: 18px;
+  max-width: 200px;
+}
+
+
+@media (max-width: 1100px) {
+  .mission--image--text--container{
+    flex-direction: column;
+  }
+  .mission--container .text{
+    margin: 32px 0 0 0 !important;
+  }
+  .missions--container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 850px) {
+  .mission--container{font-size: 60px}
+
+  .mission--container .text{
+    line-height: 24px;
+    font-size: 0.25em;
+  }
+
+  .mission--block .content{
+    font-size: 0.25em;
+  }
+}
+
+@media (max-width: 650px) {
+  .mission--block{
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mission--container{
+    font-size: 40px;
+    padding: 56px 15px;
+  }
+  .mission--container h1::after {
+    width: 70px;
+    padding-top: 32px;
+    border-bottom: 4px solid rgba(249, 208, 35, 1);
+  }
+
+  .mission--image--text--container img{
+    width: 100%;
+  }
+
+  .mission--container .text{
+    line-height: 24px;
+    font-size: 0.35em;
+  }
+
+  .mission--block{
+    width: 120px;
+  }
+
+  .mission--block .title{
+    font-size: 0.8em;
+  }
+
+  .mission--block .content{
+    font-size: 0.3em;
+    line-height: 16px;
+  }
+}
