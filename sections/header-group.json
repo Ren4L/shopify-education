@@ -47,13 +47,14 @@
         "75ac7d05-43d4-49d1-9dda-b1a11d9e4d70": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Group.svg"
+            "logo": "shopify:\/\/shop_images\/logo.svg"
           }
         },
         "16eaa9a0-8365-417d-95d4-31ba57b879f7": {
           "type": "button",
           "settings": {
             "text": "contact us",
+            "icon": "shopify:\/\/shop_images\/Group_112.svg",
             "scroll": "Contact"
           }
         }
@@ -67,7 +68,8 @@
         "75ac7d05-43d4-49d1-9dda-b1a11d9e4d70",
         "16eaa9a0-8365-417d-95d4-31ba57b879f7"
       ],
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
