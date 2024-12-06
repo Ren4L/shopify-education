@@ -9,7 +9,8 @@ header {
   font-family: "Sofia Pro", sans-serif;
   font-weight: 400;
 }
-header--container {
+
+.header--container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,22 +24,14 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-nav--element {
+
+.nav--element {
   color: rgb(11, 13, 33);
   cursor: pointer;
 }
-nav--element:hover {
+
+.nav--element:hover {
   color: rgb(249, 208, 35);
-}
-nav--elements--adaptive {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 50%;
-  font-size: 40px;
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 700;
 }
 
 .burgerIcon {
@@ -75,6 +68,21 @@ nav--elements--adaptive {
   width: 100%;
   padding: 40px 15%;
   background: black;
+}
+
+.logoAdaptive {
+  filter: invert(1);
+}
+
+.nav--elements--adaptive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
+  font-size: 40px;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 700;
 }
 
 .header--button {
