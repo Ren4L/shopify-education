@@ -1,3 +1,119 @@
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/header.scss ***!
+  \*********************************************************************************************************************************************************/
+header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+}
+header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 265px;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+nav--element {
+  color: rgb(11, 13, 33);
+  cursor: pointer;
+}
+nav--element:hover {
+  color: rgb(249, 208, 35);
+}
+nav--elements--adaptive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
+  font-size: 40px;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 700;
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+  min-width: 25px;
+}
+
+.crossIcon {
+  cursor: pointer;
+}
+
+.navbarAdaptive {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: -100vh;
+  z-index: 6;
+  background: white;
+  transition: 1s ease-in-out;
+}
+
+.active {
+  top: 0;
+}
+
+.navbarAdaptive--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 15%;
+  background: black;
+}
+
+.header--button {
+  margin-bottom: 56px;
+}
+
+.section--scroll {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 103.5px);
+  z-index: 5;
+}
+
+.section--scroll--deactive--element {
+  visibility: visible;
+}
+
+.section--scroll--active--element--1, .section--scroll--active--element--2,
+.section--scroll--active--element--3, .section--scroll--active--element--4,
+.section--scroll--active--element--5, .section--scroll--active--element--6 {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+.deactive {
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .burgerIcon {
+    display: flex;
+  }
+}
 /*!**********************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/mission.scss ***!
   \**********************************************************************************************************************************************************/
@@ -82,12 +198,12 @@
   .mission--image--text--container {
     flex-direction: column;
   }
+  .mission--image--text--container .text {
+    margin: 32px 0 0 0 !important;
+  }
   .missions--container {
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  .missions--container .text {
-    margin: 32px 0 0 0 !important;
   }
 }
 @media (max-width: 850px) {
