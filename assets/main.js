@@ -16,17 +16,17 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/index.js */ \"./js/index.js\");\n/* harmony import */ var _js_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_index_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_mission_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/mission.scss */ \"./scss/mission.scss\");\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_NavBar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/NavBar.js */ \"./js/NavBar.js\");\n/* harmony import */ var _js_NavBar_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_NavBar_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_mission_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/mission.scss */ \"./scss/mission.scss\");\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "./js/index.js":
-/*!*********************!*\
-  !*** ./js/index.js ***!
-  \*********************/
+/***/ "./js/NavBar.js":
+/*!**********************!*\
+  !*** ./js/NavBar.js ***!
+  \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("class NavBar extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    console.log('test');\n  }\n}\ncustomElements.define(\"nav-bar\", NavBar);\nconsole.log(123);\n\n//# sourceURL=webpack:///./js/NavBar.js?");
 
 /***/ }),
 
