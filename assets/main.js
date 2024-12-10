@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \**************************/
 /***/ (() => {
 
-eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    alert(`${this.name} ${this.url}`);\n  }\n  static get observedAttributes() {\n    return ['name', 'url'];\n  }\n}\ncustomElements.define(\"nav-element\", NavElement);\n\n//# sourceURL=webpack:///./js/NavElement.js?");
+eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    const a = document.createElement(\"a\");\n    console.log(this.hasAttribute(\"url\"));\n    a.href = this.hasAttribute(\"url\") && \"#\";\n    this.appendChild(a);\n  }\n  static get observedAttributes() {\n    return ['name', 'url'];\n  }\n}\ncustomElements.define(\"nav-element\", NavElement);\n\n//# sourceURL=webpack:///./js/NavElement.js?");
 
 /***/ }),
 
