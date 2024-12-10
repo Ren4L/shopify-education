@@ -112,12 +112,15 @@ nav {
   visibility: hidden;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbar {
     display: none;
   }
   .burgerIcon {
     display: flex;
+  }
+  .header--container {
+    padding: 20px 15px;
   }
 }
 nav-element {
