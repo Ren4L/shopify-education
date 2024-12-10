@@ -21,7 +21,7 @@
             {% endfor %}
             {% render 'cross', class: 'crossIcon', onclick: 'Toggle()' %}
         </div>
-        <div class="nav--elements--adaptive">
+        <div class="nav--elements--adaptive" style="padding: 118px 90px 0 90px;">
             {% for link in section.settings.menu.links %}
                 <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
             {% endfor %}
