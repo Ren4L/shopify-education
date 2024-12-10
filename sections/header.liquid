@@ -22,11 +22,8 @@
             {% render 'cross', class: 'crossIcon', onclick: 'Toggle()' %}
         </div>
         <div class="nav--elements--adaptive">
-            {% for block in section.blocks %}
-                {% case block.type %}
-                    {% when 'navbar' %}
-                        <div class="nav--element {{ block.settings.navEl }}">{{ block.settings.navEl }}</div>
-                {% endcase %}
+            {% for link in section.settings.menu.links %}
+                <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
             {% endfor %}
         </div>
     </nav>
