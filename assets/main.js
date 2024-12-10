@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \**********************/
 /***/ (() => {
 
-eval("class NavBar extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    console.log('test');\n  }\n}\ncustomElements.define(\"NavBar\", NavBar);\n\n//# sourceURL=webpack:///./js/NavBar.js?");
+eval("class NavBar extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    console.log('test');\n  }\n}\ncustomElements.define(\"nav-bar\", NavBar);\n\n//# sourceURL=webpack:///./js/NavBar.js?");
 
 /***/ }),
 
