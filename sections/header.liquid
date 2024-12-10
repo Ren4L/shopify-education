@@ -7,7 +7,7 @@
     {% endfor %}
     <nav class="navbar">
         {% for link in section.settings.menu.links %}
-            <NavBar>{{ link.title }}</NavBar>
+            <nav-bar>{{ link.title }}</nav-bar>
         {% endfor %}
     </nav>
     {% render 'burger', class: 'burgerIcon', onclick: 'Toggle()' %}
