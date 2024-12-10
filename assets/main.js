@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \**************************/
 /***/ (() => {
 
-eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n    this.attachShadow({\n      mode: 'open'\n    });\n    this.anchor = document.createElement('a');\n    this.shadowRoot.append(this.anchor);\n  }\n  connectedCallback() {\n    this.href = this.getAttribute(\"url\") ?? \"#\";\n  }\n  static get observedAttributes() {\n    return ['name', 'url'];\n  }\n  attributeChangedCallback(attr, oldVal, newVal) {\n    if (oldVal === newVal) return; // nothing changed\n    switch (attr) {\n      case 'url':\n        if (newVal) this.anchor.href = newVal;else this.anchor.removeAttribute('href');\n        break;\n      case 'name':\n        this.anchor.textContent = newVal ?? '';\n        break;\n      default:\n    }\n  }\n}\ncustomElements.define(\"nav-element\", NavElement, {\n  extends: 'a'\n});\n\n//# sourceURL=webpack:///./js/NavElement.js?");
+eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    let a = document.createElement('a');\n    a.innerHTML = this.getAttribute(\"name\");\n    a.href = this.getAttribute(\"url\");\n    this.append(a);\n  }\n  static get observedAttributes() {\n    return ['name', 'url'];\n  }\n}\ncustomElements.define(\"nav-element\", NavElement);\n\n//# sourceURL=webpack:///./js/NavElement.js?");
 
 /***/ }),
 
