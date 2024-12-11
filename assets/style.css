@@ -504,7 +504,6 @@ nav-element {
     font-size: 0.25em;
   }
   .services--blocks--container {
-    align-items: center;
     flex-direction: column;
   }
   .service--block {
