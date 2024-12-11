@@ -165,7 +165,39 @@
     },
     "news": {
       "type": "news",
-      "settings": {}
+      "blocks": {
+        "news_UXiAMw": {
+          "type": "news",
+          "settings": {
+            "image": "shopify://shop_images/denys-nevozhai-dHNF-iBfbrA-unsplash.png",
+            "icon": "shopify://shop_images/Group_256.png",
+            "title": "Marvel Celebrates Anniversary, $1B in Closed Transactions",
+            "date": "July 13, 2021"
+          }
+        },
+        "news_qVrpYX": {
+          "type": "news",
+          "settings": {
+            "title": "",
+            "date": ""
+          }
+        },
+        "news_9fLVHb": {
+          "type": "news",
+          "settings": {
+            "title": "",
+            "date": ""
+          }
+        }
+      },
+      "block_order": [
+        "news_UXiAMw",
+        "news_qVrpYX",
+        "news_9fLVHb"
+      ],
+      "settings": {
+        "title": "News"
+      }
     }
   },
   "order": [
