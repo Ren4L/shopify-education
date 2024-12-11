@@ -340,6 +340,7 @@ nav-element {
   }
   .home--container .home--bottom {
     margin-top: 200px;
+    padding: 0 65px 54px;
   }
 }
 @media (max-width: 650px) {
