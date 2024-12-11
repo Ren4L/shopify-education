@@ -382,6 +382,192 @@ nav-element {
     line-height: 16px;
   }
 }
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/news.scss ***!
+  \*******************************************************************************************************************************************************/
+.news--container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 15%;
+  font-size: 90px;
+  background: #F9F9F9;
+}
+.news--container h1 {
+  font-size: 1em;
+  text-align: left;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+.news--container h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 48px;
+  border-bottom: 6px solid rgb(249, 208, 35);
+}
+.news--container .arrow {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  width: 48px;
+  cursor: pointer;
+  z-index: 5;
+}
+.news--container .arrowRight {
+  left: auto;
+  right: 8%;
+  transform: scale(-1, 1);
+}
+
+.news--blocks--container {
+  position: relative;
+  display: flex;
+  font-size: 1em;
+  width: calc(100% + 112px);
+  margin-left: -56px;
+  margin-right: 56px;
+  padding: 56px;
+  overflow: hidden;
+}
+
+.news--slider--container {
+  display: flex;
+  margin-left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.news--element--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 570px;
+  width: 350px;
+  font-size: 1em;
+  box-shadow: 0 0 6px 0 rgba(0, 11, 107, 0.16);
+  border-radius: 0 0 0 64px;
+  margin-right: 30px;
+}
+.news--element--container .news--image {
+  width: 100%;
+  height: 230px;
+}
+.news--element--container:first-child .news--image {
+  border-radius: 0 0 0 64px;
+}
+.news--element--container .news--title {
+  font-size: 0.27em;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+  flex-grow: 0.6;
+}
+.news--element--container .news--title:hover {
+  color: rgb(249, 208, 35);
+  cursor: pointer;
+}
+.news--element--container .news--date {
+  font-size: 0.157em;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+}
+.news--element--container .news--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.news--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 60%;
+  padding: 48px;
+}
+
+.pagination--container {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  top: 93%;
+  left: calc(50% - 15vw);
+}
+
+.pagination--el {
+  cursor: pointer;
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  fill: none;
+}
+.pagination--el rect {
+  width: 8px !important;
+  height: 8px !important;
+  fill: #F9D023;
+}
+
+.activePag {
+  opacity: 1;
+}
+
+@media (max-width: 1300px) {
+  .news--container .arrowRight {
+    right: 5%;
+  }
+}
+@media (max-width: 1150px) {
+  .news--container .arrowRight {
+    right: 3%;
+  }
+  .news--container .arrowLeft {
+    left: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .pagination--container {
+    display: flex;
+  }
+  .news--container {
+    font-size: 40px;
+    padding: 56px 15px;
+  }
+  .news--container .arrowRight {
+    display: none;
+  }
+  .news--container .arrowLeft {
+    display: none;
+  }
+  .news--container h1::after {
+    width: 70px;
+    padding-top: 32px;
+    border-bottom: 4px solid rgb(249, 208, 35);
+  }
+  .news--element--container {
+    width: 250px;
+    height: 500px;
+  }
+  .news--element--container .news--title {
+    font-size: 0.45em;
+    line-height: 24px;
+  }
+  .news--element--container .news--date {
+    font-size: 0.3em;
+  }
+  .news--element--container .news--content {
+    padding: 30px;
+  }
+  .news--blocks--container {
+    width: 111vw;
+  }
+}
 /*!***********************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/services.scss ***!
   \***********************************************************************************************************************************************************/
