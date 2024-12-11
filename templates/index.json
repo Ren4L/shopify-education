@@ -165,7 +165,43 @@
     },
     "news": {
       "type": "news",
-      "settings": {}
+      "blocks": {
+        "news_KywrrF": {
+          "type": "news",
+          "settings": {
+            "image": "shopify://shop_images/denys-nevozhai-dHNF-iBfbrA-unsplash.png",
+            "icon": "shopify://shop_images/Group_256.png",
+            "title": "Marvel Power Group joins RNG Coalition",
+            "date": "February 03, 2021"
+          }
+        },
+        "news_wcBfTk": {
+          "type": "news",
+          "settings": {
+            "image": "shopify://shop_images/915_1.png",
+            "icon": "shopify://shop_images/logo-updated_2x_1.png",
+            "title": "TRC and Marvel Announce RNG Development Support Partnership",
+            "date": "May 20, 2021"
+          }
+        },
+        "news_YyH4zR": {
+          "type": "news",
+          "settings": {
+            "image": "shopify://shop_images/915_2.png",
+            "icon": "shopify://shop_images/Group_239.png",
+            "title": "Marvel Celebrates Anniversary, $1B in Closed Transactions",
+            "date": "July 13, 2021"
+          }
+        }
+      },
+      "block_order": [
+        "news_KywrrF",
+        "news_wcBfTk",
+        "news_YyH4zR"
+      ],
+      "settings": {
+        "title": "News"
+      }
     }
   },
   "order": [
