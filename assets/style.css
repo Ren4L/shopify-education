@@ -206,6 +206,10 @@ nav-element {
   .home--container {
     font-size: 16px;
   }
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 @media (max-width: 650px) {
   .home--bottom {
