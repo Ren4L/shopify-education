@@ -52,7 +52,7 @@
         "share": {
           "type": "share",
           "settings": {
-            "share_label": "{{ product.metafields.custom.test.value }}"
+            "share_label": "Share"
           }
         }
       },
