@@ -216,6 +216,9 @@ nav-element {
   .home--container .home--button {
     margin-top: 28px;
   }
+  .home--container .home--bottom {
+    margin-top: 200px;
+  }
 }
 @media (max-width: 650px) {
   .home--bottom {
