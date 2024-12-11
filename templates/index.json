@@ -178,15 +178,19 @@
         "news_qVrpYX": {
           "type": "news",
           "settings": {
-            "title": "",
-            "date": ""
+            "image": "shopify://shop_images/915_1.png",
+            "icon": "shopify://shop_images/logo-updated_2x_1.png",
+            "title": "TRC and Marvel Announce RNG Development Support Partnership",
+            "date": "May 20, 2021"
           }
         },
         "news_9fLVHb": {
           "type": "news",
           "settings": {
-            "title": "",
-            "date": ""
+            "image": "shopify://shop_images/915_2.png",
+            "icon": "shopify://shop_images/Group_256.png",
+            "title": "Marvel Power Group joins RNG Coalition",
+            "date": "February 03, 2021"
           }
         }
       },
