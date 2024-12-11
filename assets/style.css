@@ -1,3 +1,129 @@
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/header.scss ***!
+  \*********************************************************************************************************************************************************/
+header {
+  width: 100vw;
+  font-size: 18px;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 400;
+}
+
+.header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 265px;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.nav--element {
+  color: rgb(11, 13, 33);
+  cursor: pointer;
+}
+
+.nav--element:hover {
+  color: rgb(249, 208, 35);
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+  min-width: 25px;
+}
+
+.crossIcon {
+  cursor: pointer;
+}
+
+.navbarAdaptive {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: -100vh;
+  z-index: 6;
+  background: white;
+  transition: 1s ease-in-out;
+}
+
+.active {
+  top: 0;
+}
+
+.navbarAdaptive--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 15px;
+  background: black;
+}
+
+.logoAdaptive {
+  filter: invert(1);
+}
+
+.nav--elements--adaptive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: "Sofia Pro", sans-serif;
+  font-weight: 700;
+}
+
+.header--button {
+  margin-bottom: 56px;
+}
+
+.section--scroll {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 103.5px);
+  z-index: 5;
+}
+
+.section--scroll--deactive--element {
+  visibility: visible;
+}
+
+.section--scroll--active--element--1, .section--scroll--active--element--2,
+.section--scroll--active--element--3, .section--scroll--active--element--4,
+.section--scroll--active--element--5, .section--scroll--active--element--6 {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+.deactive {
+  visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+  .burgerIcon {
+    display: flex;
+  }
+  .header--container {
+    padding: 20px 15px;
+  }
+}
+nav-element {
+  padding: 0 5px;
+}
 /*!**********************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/mission.scss ***!
   \**********************************************************************************************************************************************************/
@@ -9,14 +135,12 @@
   padding: 96px 15%;
   font-size: 90px;
 }
-
 .mission--container h1 {
   font-size: 1em;
   text-align: left;
   font-family: "Alata", sans-serif;
   font-weight: 400;
 }
-
 .mission--container h1::after {
   content: "";
   display: block;
@@ -33,12 +157,10 @@
   font-size: 1em;
   margin-top: 56px;
 }
-
 .mission--image--text--container img {
   display: flex;
   width: 400px;
 }
-
 .mission--image--text--container .text {
   font-size: 0.188em;
   font-family: "Sofia Pro", sans-serif;
@@ -63,19 +185,16 @@
   justify-content: flex-start;
   font-size: 1em;
 }
-
 .mission--block img {
   margin-bottom: 16px;
 }
-
-.mission--block .title {
+.mission--block--title {
   font-family: "Sofia Pro", sans-serif;
   font-weight: 700;
   font-size: 0.45em;
   margin-bottom: 8px;
 }
-
-.mission--block .content {
+.mission--block--content {
   font-family: "Sofia Pro", sans-serif;
   font-weight: 300;
   font-size: 0.14em;
@@ -89,7 +208,7 @@
   .mission--image--text--container {
     flex-direction: column;
   }
-  .mission--container .text {
+  .mission--image--text--container .text {
     margin: 32px 0 0 0 !important;
   }
   .missions--container {
@@ -105,7 +224,7 @@
     line-height: 24px;
     font-size: 0.25em;
   }
-  .mission--block .content {
+  .mission--block .mission--block--content {
     font-size: 0.25em;
   }
 }
@@ -119,6 +238,10 @@
     font-size: 40px;
     padding: 56px 15px;
   }
+  .mission--container .text {
+    line-height: 24px;
+    font-size: 0.35em;
+  }
   .mission--container h1::after {
     width: 70px;
     padding-top: 32px;
@@ -127,17 +250,13 @@
   .mission--image--text--container img {
     width: 100%;
   }
-  .mission--container .text {
-    line-height: 24px;
-    font-size: 0.35em;
-  }
   .mission--block {
     width: 120px;
   }
-  .mission--block .title {
+  .mission--block--title {
     font-size: 0.8em;
   }
-  .mission--block .content {
+  .mission--block--content {
     font-size: 0.3em;
     line-height: 16px;
   }

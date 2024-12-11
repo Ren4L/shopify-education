@@ -10,8 +10,8 @@
                 {% when 'missions' %}
                     <div class="mission--block">
                         {{ block.settings.image | image_url: width: 72 | image_tag }}
-                        <div class="title">{{ block.settings.title }}</div>
-                        <div class="content">{{ block.settings.content }}</div>
+                        <div class="mission--block--title">{{ block.settings.title }}</div>
+                        <div class="mission--block--content">{{ block.settings.content }}</div>
                     </div>
             {% endcase %}
         {% endfor %}
