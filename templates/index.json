@@ -86,10 +86,15 @@
         "image": "shopify://shop_images/2438_2.jpg",
         "text": "<p><strong>Energy Transition is our core and only focus.</strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.</p>"
       }
+    },
+    "services": {
+      "type": "services",
+      "settings": {}
     }
   },
   "order": [
     "home",
+    "services",
     "mission"
   ]
 }
