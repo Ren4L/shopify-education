@@ -487,6 +487,12 @@ nav-element {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 1000px) {
+  .service--block {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 850px) {
   .services--container {
     font-size: 60px;
