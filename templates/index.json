@@ -30,10 +30,6 @@
         "image": "shopify://shop_images/robert-bye-R-WtV-QyVnY-unsplash.png"
       }
     },
-    "services": {
-      "type": "services",
-      "settings": {}
-    },
     "mission": {
       "type": "mission",
       "blocks": {
@@ -89,6 +85,42 @@
         "title": "Mission",
         "image": "shopify://shop_images/2438_2.jpg",
         "text": "<p><strong>Energy Transition is our core and only focus.</strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.</p>"
+      }
+    },
+    "services": {
+      "type": "services",
+      "blocks": {
+        "block_wDrUhN": {
+          "type": "block",
+          "settings": {
+            "title": "Transaction Support",
+            "points": "<ul><li>Renewable Natural Gas offtakes</li><li>RIN, RTC, REC and LCFS brokerage</li><li>Renewable PPA origination</li><li>Contract negotiations and structuring</li></ul>"
+          }
+        },
+        "block_FYU7fG": {
+          "type": "block",
+          "settings": {
+            "title": "Enterprise Strategy",
+            "points": "<ul><li>Market advisory</li><li>Risk management</li><li>Capital sourcing or deployment</li><li>Resource optimization</li></ul>"
+          }
+        },
+        "block_gDyncT": {
+          "type": "block",
+          "settings": {
+            "title": "Market Development",
+            "points": "<ul><li>New venture strategy</li><li>Go-to-market architecture</li><li>M&A support</li><li>Marketing and partnerships</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_wDrUhN",
+        "block_FYU7fG",
+        "block_gDyncT"
+      ],
+      "settings": {
+        "title": "Services",
+        "paragraph1": "Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges.",
+        "paragraph2": "Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs."
       }
     }
   },
