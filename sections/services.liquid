@@ -1,0 +1,61 @@
+<div class="services--container" id="{{ section.settings.title }}">
+  <h1>{{ section.settings.title }}</h1>
+  <div class="paragraph1">{{ section.settings.paragraph1 }}</div>
+  <div class="services--blocks--container">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'block' %}
+          <div class="service--block">
+            <div class="title">{{ block.settings.title }}</div>
+            {{ block.settings.points }}
+            {% render 'arrow', color: 'white' %}
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="paragraph2">{{ section.settings.paragraph2 }}</div>
+</div>
+
+{% schema %}
+{
+  "name": "Services",
+  "tag": "section",
+  "settings":[
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title section",
+      "default": "Services"
+    },
+    {
+      "type": "text",
+      "id": "paragraph1",
+      "label": "Paragraph 1"
+    },
+    {
+      "type": "text",
+      "id": "paragraph2",
+      "label": "Paragraph 2"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "block",
+      "name": "Services",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "points",
+          "label": "Points"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
