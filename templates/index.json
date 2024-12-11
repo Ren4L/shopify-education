@@ -162,12 +162,17 @@
       "settings": {
         "title": "Team"
       }
+    },
+    "news": {
+      "type": "news",
+      "settings": {}
     }
   },
   "order": [
     "home",
     "mission",
     "services",
-    "team"
+    "team",
+    "news"
   ]
 }
