@@ -438,9 +438,13 @@ nav-element {
 }
 .service--block .title {
   font-family: "Sofia Pro", sans-serif;
-  font-weight: 700;
-  font-size: 0.445em;
   margin-bottom: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 .service--block ul {
   font-size: 1em;
