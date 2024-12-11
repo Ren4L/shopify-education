@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_NavElement_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/NavElement.js */ \"./js/NavElement.js\");\n/* harmony import */ var _js_NavElement_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_NavElement_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_mission_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/mission.scss */ \"./scss/mission.scss\");\n/* harmony import */ var _scss_news_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/news.scss */ \"./scss/news.scss\");\n/* harmony import */ var _scss_services_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/services.scss */ \"./scss/services.scss\");\n/* harmony import */ var _scss_static_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scss/static.scss */ \"./scss/static.scss\");\n/* harmony import */ var _scss_team_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./scss/team.scss */ \"./scss/team.scss\");\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_NavElement_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/NavElement.js */ \"./js/NavElement.js\");\n/* harmony import */ var _js_NavElement_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_NavElement_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/footer.scss */ \"./scss/footer.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_mission_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/mission.scss */ \"./scss/mission.scss\");\n/* harmony import */ var _scss_news_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/news.scss */ \"./scss/news.scss\");\n/* harmony import */ var _scss_services_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scss/services.scss */ \"./scss/services.scss\");\n/* harmony import */ var _scss_static_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./scss/static.scss */ \"./scss/static.scss\");\n/* harmony import */ var _scss_team_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scss/team.scss */ \"./scss/team.scss\");\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -27,6 +27,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /***/ (() => {
 
 eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n  }\n  connectedCallback() {\n    let a = document.createElement('a');\n    a.innerHTML = this.getAttribute(\"name\");\n    a.href = this.getAttribute(\"url\");\n    a.style.color = \"inherit\";\n    a.style.textDecoration = \"none\";\n    if (this.getAttribute(\"url\").includes('#')) {\n      this.onclick = () => {\n        let navbar = document.querySelector('.navbarAdaptive');\n        if (navbar.classList.contains('active')) {\n          navbar.classList.toggle('active');\n        }\n      };\n    }\n    this.append(a);\n  }\n  static get observedAttributes() {\n    return ['name', 'url'];\n  }\n}\ncustomElements.define(\"nav-element\", NavElement);\n\n//# sourceURL=webpack:///./js/NavElement.js?");
+
+/***/ }),
+
+/***/ "./scss/footer.scss":
+/*!**************************!*\
+  !*** ./scss/footer.scss ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./scss/footer.scss?");
 
 /***/ }),
 
