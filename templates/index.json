@@ -143,12 +143,13 @@
         "cv_Ht8bVt": {
           "type": "cv",
           "settings": {
-            "firstName": "",
-            "lastName": "",
-            "position": "",
-            "about": "",
-            "history": "",
-            "education": "",
+            "firstName": "Sam",
+            "lastName": "Peelle",
+            "image": "shopify://shop_images/1579049379327_1.png",
+            "position": "Senior Director and Partner",
+            "about": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
+            "history": "<ul><li>Director, AMS (acquired by Fluence, NASDAQ: FLNC)</li><li>Manager, EnerNOC (acquired by Enel, BIT: ENEL)</li><li>Regional Manager, United Technologies Corporation</li></ul>",
+            "education": "<ul><li>BA, Political Science, University of Pennsylvania</li><li>MBA, Finance, Babson College</li></ul>",
             "linked": "",
             "mail": ""
           }
