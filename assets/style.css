@@ -130,7 +130,6 @@ nav-element {
   \*******************************************************************************************************************************************************/
 .home--container {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   font-size: 25px;
   color: white;
@@ -213,6 +212,9 @@ nav-element {
   .home--container h2 {
     font-size: 16px;
     line-height: 20px;
+  }
+  .home--container .home--button {
+    margin-top: 28px;
   }
 }
 @media (max-width: 650px) {
