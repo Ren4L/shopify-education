@@ -1,6 +1,12 @@
 /*!*******************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/cart.scss ***!
   \*******************************************************************************************************************************************************/
+.cart-icon {
+  border: 1px black solid;
+  background: white;
+  border-radius: 50%;
+}
+
 #cart {
   position: absolute;
   top: 0;
