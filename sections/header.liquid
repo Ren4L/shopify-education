@@ -9,7 +9,7 @@
         {% for link in section.settings.menu.links %}
             <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
         {% endfor %}
-        {% render 'cart-modal' %}
+        {% render 'cart-modal-button' %}
     </nav>
     {% render 'burger', class: 'burgerIcon', onclick: 'Toggle()' %}
     <nav class="navbarAdaptive">
@@ -26,6 +26,7 @@
             {% for link in section.settings.menu.links %}
                 <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
             {% endfor %}
+            {% render 'cart-modal-button' %}
         </div>
     </nav>
 </div>
