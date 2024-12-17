@@ -27,26 +27,23 @@
                     </button>
                     <img src="{{ item.image | img_url }}" class="cart--image">
                     <div style="display: flex; flex-direction: column;">
-                        <p style="
+                        <div style="
                             font-weight: bold;
                             font-size: 14px;
                             line-height: 16.41px;
                             text-align: left;
                             text-underline-position: from-font;
                             text-decoration-skip-ink: none;
-                        ">{{ item.product.title }}</p>
-                        {% for option in item.options_with_values %}
-                            <p class="cart--option">{{ option.name }}: {{ option.values }}</p>
-                        {% endfor %}
-                        <p class="cart--option">Qty: {{ item.quantity }}</p>
-                        <p style="
+                        ">{{ item.product.title }}</div>
+                        <div class="cart--option">Qty: {{ item.quantity }}</div>
+                        <div style="
                             font-size: 16px;
                             font-weight: 600;
                             line-height: 18.75px;
                             text-align: left;
                             text-underline-position: from-font;
                             text-decoration-skip-ink: none;
-                        ">{{ item.price | money }}</p>
+                        ">{{ item.price | money }}</div>
                     </div>
                 </div>
             {% endfor %}
