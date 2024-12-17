@@ -36,7 +36,7 @@ eval("class NavElement extends HTMLElement {\n  constructor() {\n    super();\n 
   \********************/
 /***/ (() => {
 
-eval("const CART_CONTAINER = document.querySelector('#cart');\nfunction ToggleCart() {\n  CART_CONTAINER.classList.toggle('active');\n}\n\n//# sourceURL=webpack:///./js/cart.js?");
+eval("\n\n//# sourceURL=webpack:///./js/cart.js?");
 
 /***/ }),
 
