@@ -66,7 +66,7 @@
                     text-decoration-skip-ink: none;
                 ">
                     <div>Total Product Price</div>
-                    <div>{{ cart.original_total_price }}</div>
+                    <div>{{ cart.original_total_price | money }}</div>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;
                     font-size: 14px;
@@ -76,7 +76,7 @@
                     text-decoration-skip-ink: none;
                 ">
                     <div>Total Discounts</div>
-                    <div>{{ cart.total_discount }}</div>
+                    <div>{{ cart.total_discount | money }}</div>
                 </div>
             </div>
             <div style="
@@ -93,7 +93,7 @@
                 margin: 18px 0;
             ">
                 <div>Order Total</div>
-                <div>{{ cart.total_price }}</div>
+                <div>{{ cart.total_price | money }}</div>
             </div>
         </div>
     </div>
