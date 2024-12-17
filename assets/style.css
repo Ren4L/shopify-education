@@ -38,6 +38,9 @@
   display: flex;
   align-items: center;
 }
+#cart .cart--container .cart--body {
+  overflow: scroll;
+}
 #cart .cart--container .cart--element {
   display: flex;
   align-items: center;
@@ -47,6 +50,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2509803922);
   border-radius: 8px;
   padding: 20px 23px;
+  margin-bottom: 15px;
 }
 #cart .cart--container .cart--element .cart--image {
   width: 80px;
