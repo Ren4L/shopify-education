@@ -26,7 +26,7 @@
                         </svg>
                     </button>
                     <img src="{{ item.image | img_url }}" class="cart--image">
-                    <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: column; margin-left: 24px;">
                         <div style="
                             font-weight: bold;
                             font-size: 14px;
@@ -47,6 +47,41 @@
                     </div>
                 </div>
             {% endfor %}
+        </div>
+        <div class="cart--footer">
+            <p style="
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.09px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            ">Price Details</p>
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%">
+                    <div>Total Product Price</div>
+                    <div>{{ cart.original_total_price }}</div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%">
+                    <div>Total Discounts</div>
+                    <div>{{ cart.total_discount }}</div>
+                </div>
+            </div>
+            <div style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.09px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            ">
+                <div>Order Total</div>
+                <div>{{ cart.total_price }}</div>
+            </div>
         </div>
     </div>
 </div>
