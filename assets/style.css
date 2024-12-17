@@ -34,6 +34,10 @@
   height: 100%;
   padding: 50px 20px;
 }
+#cart .cart--container .cart--header {
+  display: flex;
+  align-items: center;
+}
 
 .active {
   display: flex !important;
