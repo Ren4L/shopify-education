@@ -39,6 +39,9 @@
   align-items: center;
 }
 #cart .cart--container .cart--element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   background: rgba(147, 71, 143, 0.2);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2509803922);
