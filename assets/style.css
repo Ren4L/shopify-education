@@ -257,6 +257,7 @@ nav {
   z-index: 6;
   background: white;
   transition: 1s ease-in-out;
+  justify-content: flex-start;
 }
 
 .active {
