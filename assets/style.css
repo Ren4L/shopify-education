@@ -37,9 +37,15 @@
 #cart .cart--container .cart--header {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 #cart .cart--container .cart--body {
   overflow: scroll;
+  height: 100%;
+  overflow-x: auto;
+}
+#cart .cart--container .cart--body::-webkit-scrollbar {
+  width: 0;
 }
 #cart .cart--container .cart--element {
   display: flex;
