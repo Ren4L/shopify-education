@@ -26,7 +26,7 @@
                         </svg>
                     </button>
                     <img src="{{ item.image | img_url }}" class="cart--image">
-                    <div>
+                    <div style="display: flex; flex-direction: column;">
                         <p style="
                             font-weight: bold;
                             font-size: 14px;
@@ -35,7 +35,8 @@
                             text-underline-position: from-font;
                             text-decoration-skip-ink: none;
                         ">{{ item.product.title }}</p>
-                        <p class="cart--option"></p>
+                        <p class="cart--option">1{{ item.options_by_name.size }}</p>
+                        <p class="cart--option">2{{ item.options_by_name.size.value }}</p>
                         <p class="cart--option">Qty: {{ item.quantity }}</p>
                         <p style="
                             font-size: 16px;
