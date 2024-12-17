@@ -1,3 +1,20 @@
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/cart.scss ***!
+  \*******************************************************************************************************************************************************/
+#cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #9E4D9A -20.77%, #FFD8FD 117.1%);
+}
+#cart .active {
+  display: flex;
+}
 /*!*********************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/import-glob-loader/index.js!./scss/footer.scss ***!
   \*********************************************************************************************************************************************************/
