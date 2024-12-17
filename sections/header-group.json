@@ -25,9 +25,14 @@
         "75ac7d05-43d4-49d1-9dda-b1a11d9e4d70"
       ],
       "settings": {}
+    },
+    "cart-modal": {
+      "type": "cart-modal",
+      "settings": {}
     }
   },
   "order": [
-    "header"
+    "header",
+    "cart-modal"
   ]
 }
