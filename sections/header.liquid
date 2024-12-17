@@ -25,6 +25,7 @@
             {% for link in section.settings.menu.links %}
                 <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
             {% endfor %}
+            {% render 'cart' %}
         </div>
     </nav>
 </div>
