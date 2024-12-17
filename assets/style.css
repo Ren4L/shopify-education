@@ -25,6 +25,8 @@
   padding: 5% 38%;
 }
 #cart .cart--container {
+  display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 30px;
