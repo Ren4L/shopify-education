@@ -38,6 +38,31 @@
   display: flex;
   align-items: center;
 }
+#cart .cart--container .cart--element {
+  position: relative;
+  background: rgba(147, 71, 143, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2509803922);
+  border-radius: 8px;
+  padding: 20px 23px;
+}
+#cart .cart--container .cart--element .cart--image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+#cart .cart--container .cart--element .cart--option {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+#cart .cart--container .cart--element .cart--remove {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
 
 .active {
   display: flex !important;
