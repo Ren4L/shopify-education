@@ -1,5 +1,4 @@
 <div class="header--container">
-    {% render 'cart-modal' %}
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
@@ -10,7 +9,7 @@
         {% for link in section.settings.menu.links %}
             <nav-element url="{{ link.url }}" name="{{ link.title }}"></nav-element>
         {% endfor %}
-
+        {% render 'cart-modal' %}
     </nav>
     {% render 'burger', class: 'burgerIcon', onclick: 'Toggle()' %}
     <nav class="navbarAdaptive">
