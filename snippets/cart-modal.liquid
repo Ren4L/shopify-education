@@ -37,6 +37,8 @@
                         ">{{ item.product.title }}</p>
                         <p class="cart--option">1{{ item.options_by_name.size }}</p>
                         <p class="cart--option">2{{ item.options_by_name.size.value }}</p>
+                        <p class="cart--option">3{{ item.options_by_name['Size'] }}</p>
+                        <p class="cart--option">4{{ item.options_by_name['Size'].value }}</p>
                         <p class="cart--option">Qty: {{ item.quantity }}</p>
                         <p style="
                             font-size: 16px;
