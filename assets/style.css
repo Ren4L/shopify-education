@@ -5,6 +5,8 @@
   border: 1px black solid;
   background: white;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 #cart {
