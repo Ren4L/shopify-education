@@ -33,15 +33,15 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_CJnzPM": {
+        "featured_collection_VipnDG": {
           "type": "featured_collection",
           "settings": {
-            "collection": "automated-collection"
+            "collection": "frontpage"
           }
         }
       },
       "block_order": [
-        "featured_collection_CJnzPM"
+        "featured_collection_VipnDG"
       ],
       "settings": {
         "title": "Collections",
