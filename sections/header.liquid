@@ -1,8 +1,4 @@
-<div class="header--container
-{%- if settings.position -%}
-header--container--absolute
-{%- endif -%}
-">
+<div class="header--container {{ settings.position }}">
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
