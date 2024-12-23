@@ -1,8 +1,8 @@
-    {%- if settings.position -%}
-        <div class="header--container header--container--absolute">
-    {%- else -%}
-        <div class="header--container">
-    {%- endif -%}
+<div class="header--container
+{%- if settings.position -%}
+header--container--absolute
+{%- endif -%}
+">
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
@@ -58,7 +58,7 @@
       "type": "checkbox",
       "id": "position",
       "label": "Enable position absolute",
-      "default": true
+      "default": false
     }
   ],
   "blocks": [
