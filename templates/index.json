@@ -27,8 +27,12 @@
         "title": "Home",
         "titleSection": "Marvel Power Group",
         "support": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors.",
-        "image": "shopify:\/\/shop_images\/robert-bye-R-WtV-QyVnY-unsplash.png"
+        "image": "shopify://shop_images/robert-bye-R-WtV-QyVnY-unsplash.png"
       }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "settings": {}
     },
     "mission": {
       "type": "mission",
@@ -36,7 +40,7 @@
         "missions_YktiWJ": {
           "type": "missions",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_263.svg",
+            "image": "shopify://shop_images/Group_263.svg",
             "title": "$1B",
             "content": "in closed RNG transactions in 2021 alone"
           }
@@ -44,7 +48,7 @@
         "missions_PmDFm9": {
           "type": "missions",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_262.svg",
+            "image": "shopify://shop_images/Group_262.svg",
             "title": "$4B",
             "content": "in cumulative Renewable Energy and RNG closings"
           }
@@ -52,7 +56,7 @@
         "missions_i3wJeE": {
           "type": "missions",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_261.svg",
+            "image": "shopify://shop_images/Group_261.svg",
             "title": "30Yrs",
             "content": "of collective industry experience"
           }
@@ -60,7 +64,7 @@
         "missions_NAL38H": {
           "type": "missions",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_260.svg",
+            "image": "shopify://shop_images/Group_260.svg",
             "title": "$300M",
             "content": "in capital placed for client ventures"
           }
@@ -68,7 +72,7 @@
         "missions_7wiLXx": {
           "type": "missions",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_259.svg",
+            "image": "shopify://shop_images/Group_259.svg",
             "title": "100%",
             "content": "independent and unbiased advice"
           }
@@ -83,8 +87,8 @@
       ],
       "settings": {
         "title": "Mission",
-        "image": "shopify:\/\/shop_images\/2438_2.jpg",
-        "text": "<p><strong>Energy Transition is our core and only focus.<\/strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.<\/p>"
+        "image": "shopify://shop_images/2438_2.jpg",
+        "text": "<p><strong>Energy Transition is our core and only focus.</strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity.</p>"
       }
     },
     "services": {
@@ -94,21 +98,21 @@
           "type": "block",
           "settings": {
             "title": "Transaction Support",
-            "points": "<ul><li>Renewable Natural Gas offtakes<\/li><li>RIN, RTC, REC and LCFS brokerage<\/li><li>Renewable PPA origination<\/li><li>Contract negotiations and structuring<\/li><\/ul>"
+            "points": "<ul><li>Renewable Natural Gas offtakes</li><li>RIN, RTC, REC and LCFS brokerage</li><li>Renewable PPA origination</li><li>Contract negotiations and structuring</li></ul>"
           }
         },
         "block_FYU7fG": {
           "type": "block",
           "settings": {
             "title": "Enterprise Strategy",
-            "points": "<ul><li>Market advisory<\/li><li>Risk management<\/li><li>Capital sourcing or deployment<\/li><li>Resource optimization<\/li><\/ul>"
+            "points": "<ul><li>Market advisory</li><li>Risk management</li><li>Capital sourcing or deployment</li><li>Resource optimization</li></ul>"
           }
         },
         "block_gDyncT": {
           "type": "block",
           "settings": {
             "title": "Market Development",
-            "points": "<ul><li>New venture strategy<\/li><li>Go-to-market architecture<\/li><li>M&A support<\/li><li>Marketing and partnerships<\/li><\/ul>"
+            "points": "<ul><li>New venture strategy</li><li>Go-to-market architecture</li><li>M&A support</li><li>Marketing and partnerships</li></ul>"
           }
         }
       },
@@ -131,11 +135,11 @@
           "settings": {
             "firstName": "Katherine",
             "lastName": "Ryzhaya",
-            "image": "shopify:\/\/shop_images\/photo_2020-05-28_12-43-34_1.png",
+            "image": "shopify://shop_images/photo_2020-05-28_12-43-34_1.png",
             "position": "Founder and CEO",
             "about": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business her way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
-            "history": "<ul><li>CEO, Renovar, Shell Digital Ventures<\/li><li>CCO, Lightsource bp<\/li><li>Co-Founder and CCO, AMS (acquired by Fluence, NASDAQ: FLNC)<\/li><li>VP and Director, Evolution Markets<\/li><li>Principal, Pacific Gas and Electric Company<\/li><\/ul>",
-            "education": "<ul><li>BS, Finance, University of San Francisco<\/li><li>MBA, Finance, Duke University<\/li><\/ul>",
+            "history": "<ul><li>CEO, Renovar, Shell Digital Ventures</li><li>CCO, Lightsource bp</li><li>Co-Founder and CCO, AMS (acquired by Fluence, NASDAQ: FLNC)</li><li>VP and Director, Evolution Markets</li><li>Principal, Pacific Gas and Electric Company</li></ul>",
+            "education": "<ul><li>BS, Finance, University of San Francisco</li><li>MBA, Finance, Duke University</li></ul>",
             "linked": "#",
             "mail": "#"
           }
@@ -145,11 +149,11 @@
           "settings": {
             "firstName": "Sam",
             "lastName": "Peelle",
-            "image": "shopify:\/\/shop_images\/1579049379327_1.png",
+            "image": "shopify://shop_images/1579049379327_1.png",
             "position": "Senior Director and Partner",
             "about": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
-            "history": "<ul><li>Director, AMS (acquired by Fluence, NASDAQ: FLNC)<\/li><li>Manager, EnerNOC (acquired by Enel, BIT: ENEL)<\/li><li>Regional Manager, United Technologies Corporation<\/li><\/ul>",
-            "education": "<ul><li>BA, Political Science, University of Pennsylvania<\/li><li>MBA, Finance, Babson College<\/li><\/ul>",
+            "history": "<ul><li>Director, AMS (acquired by Fluence, NASDAQ: FLNC)</li><li>Manager, EnerNOC (acquired by Enel, BIT: ENEL)</li><li>Regional Manager, United Technologies Corporation</li></ul>",
+            "education": "<ul><li>BA, Political Science, University of Pennsylvania</li><li>MBA, Finance, Babson College</li></ul>",
             "linked": "",
             "mail": ""
           }
@@ -169,8 +173,8 @@
         "news_UXiAMw": {
           "type": "news",
           "settings": {
-            "image": "shopify:\/\/shop_images\/denys-nevozhai-dHNF-iBfbrA-unsplash.png",
-            "icon": "shopify:\/\/shop_images\/Group_256.png",
+            "image": "shopify://shop_images/denys-nevozhai-dHNF-iBfbrA-unsplash.png",
+            "icon": "shopify://shop_images/Group_256.png",
             "title": "Marvel Celebrates Anniversary, $1B in Closed Transactions",
             "date": "July 13, 2021"
           }
@@ -178,8 +182,8 @@
         "news_qVrpYX": {
           "type": "news",
           "settings": {
-            "image": "shopify:\/\/shop_images\/915_1.png",
-            "icon": "shopify:\/\/shop_images\/logo-updated_2x_1.png",
+            "image": "shopify://shop_images/915_1.png",
+            "icon": "shopify://shop_images/logo-updated_2x_1.png",
             "title": "TRC and Marvel Announce RNG Development Support Partnership",
             "date": "May 20, 2021"
           }
@@ -187,8 +191,8 @@
         "news_9fLVHb": {
           "type": "news",
           "settings": {
-            "image": "shopify:\/\/shop_images\/915_2.png",
-            "icon": "shopify:\/\/shop_images\/Group_256.png",
+            "image": "shopify://shop_images/915_2.png",
+            "icon": "shopify://shop_images/Group_256.png",
             "title": "Marvel Power Group joins RNG Coalition",
             "date": "February 03, 2021"
           }
@@ -206,6 +210,7 @@
   },
   "order": [
     "home",
+    "collection-list",
     "mission",
     "services",
     "team",
