@@ -1,8 +1,9 @@
-    {%- if section.settings.position -%}
+    {%- if page.handle -%}
         <div class="header--container header--container--absolute">
     {%- else -%}
         <div class="header--container">
     {%- endif -%}
+            {{ page.handle }}
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
@@ -53,12 +54,6 @@
       "id": "menu",
       "default": "main-menu",
       "label": "Navigation"
-    },
-    {
-      "type": "checkbox",
-      "id": "position",
-      "label": "Enable position absolute",
-      "default": false
     }
   ],
   "blocks": [
