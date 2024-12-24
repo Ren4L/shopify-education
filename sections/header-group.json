@@ -26,7 +26,7 @@
       ],
       "settings": {
         "menu": "main-menu",
-        "position": false
+        "position": true
       }
     },
     "cart-modal": {
