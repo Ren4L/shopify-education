@@ -105,8 +105,8 @@
             },
             body: JSON.stringify({"id": target.dataset.variantid, "quantity": 0})
             })
-            .then(response => {
-                let res = response.json();
+            .then(async response => {
+                let res = await response.json();
                 document.querySelector('.total_product_price').innerHTML = res.original_total_price;
                 document.querySelector('.total_discount').innerHTML = res.total_discount;
                 document.querySelector('.total_price').innerHTML = res.total_price;
