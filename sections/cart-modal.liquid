@@ -103,13 +103,7 @@
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                "items": [
-                    {
-                        "id": +target.dataset.variantid,
-                        "quantity": 0,
-                    },
-                ]})
+            body: JSON.stringify({[+target.dataset.variantid]: 0})
             })
             .then(response => {
                 return response.json();
