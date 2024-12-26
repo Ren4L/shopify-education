@@ -98,14 +98,12 @@
     }
 
     function DeleteItemCart(target) {
-        var formData = new FormData();
-        formData.append(`updates[${+target.dataset.variantid}]`, 0);
         fetch(window.Shopify.routes.root + 'cart/update.js', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: formData
+            body: JSON.stringify({[+target.dataset.variantid]: 0})
             })
             .then(response => {
                 return response.json();
