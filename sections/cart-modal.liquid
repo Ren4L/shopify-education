@@ -106,6 +106,7 @@
             body: JSON.stringify({"id": target.dataset.variantid, "quantity": 0})
             })
             .then(response => {
+                target.remove();
                 return response.json();
             })
             .catch((error) => {
