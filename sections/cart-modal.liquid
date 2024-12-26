@@ -98,13 +98,13 @@
     }
 
     function DeleteItemCart(target) {
-        fetch(window.Shopify.routes.root + 'cart/update.js', {
+        fetch(window.Shopify.routes.root + 'cart/clear.js', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                [target.dataset.variantid]: 2
+                id:[+target.dataset.variantid]
             })
         })
             .then(response => {
