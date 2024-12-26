@@ -98,7 +98,7 @@
     }
 
     function DeleteItemCart(target) {
-        fetch(window.Shopify.routes.root + 'cart/change.js', {
+        fetch(window.Shopify.routes.root + 'cart/update.js', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
