@@ -188,7 +188,7 @@
       })).json();
 
       document.querySelector('#cart').remove();
-      document.body.append(responseSection['cart-modal']);
+      document.body.innerHTML += responseSection['cart-modal'];
     }
   </script>
 </div>
