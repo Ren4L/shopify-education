@@ -187,8 +187,8 @@
         }
       })).json();
 
-      
-      console.log(responseSection)
+      document.querySelector('#shopify-section-cart-modal').remove();
+      document.append(responseSection.cart-modal);
     }
   </script>
 </div>
