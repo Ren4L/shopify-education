@@ -154,7 +154,7 @@
       event.preventDefault();
       let variantId = document.querySelector('.product-variant-id').value;
       let quantity = document.querySelector('.quantity__input').value;
-      let response = (await fetch(window.Shopify.routes.root + 'cart.js', {
+      let response = await (await fetch(window.Shopify.routes.root + 'cart.js', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
