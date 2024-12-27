@@ -188,7 +188,7 @@
           'Content-Type': 'application/json'
         }
       })).json();
-
+      console.log(document.querySelector('#cart').parentNode)
       document.querySelector('#cart').parentNode.innerHTML = responseSection['cart-modal'];
 
     }
