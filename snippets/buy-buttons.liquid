@@ -180,7 +180,7 @@
         })
       })).json();
 
-      document.querySelector('.quantity-cart').innerHTML = newItems[0]?.quantity;
+      document.querySelector('.quantity-cart').innerHTML = newItems?.items[0]?.quantity;
 
       let responseSection = await (await fetch('/?sections=cart-modal', {
         method: 'GET',
