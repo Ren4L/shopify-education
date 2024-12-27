@@ -187,8 +187,7 @@
         }
       })).json();
 
-      document.querySelector('#shopify-section-cart-modal').remove();
-      document.append(responseSection.cart-modal);
+      document.querySelector('#cart').parentNode.innerHTML = responseSection['cart-modal'];
     }
   </script>
 </div>
