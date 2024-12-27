@@ -166,6 +166,7 @@
           quantity += el.quantity;
         }
       })
+
       await fetch(window.Shopify.routes.root + 'cart/add.js', {
         method: 'POST',
         headers: {
@@ -178,7 +179,14 @@
           }]
         })
       });
-      console.log(variantId, quantity, response)
+
+      let responseSection = await (await fetch('/?sections=cart-modal', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })).json();
+      console.log(responseSection)
     }
   </script>
 </div>
