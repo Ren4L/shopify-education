@@ -167,7 +167,7 @@
         }
       })
 
-      await fetch(window.Shopify.routes.root + 'cart/add.js', {
+      let newItems = await (await fetch(window.Shopify.routes.root + 'cart/add.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -178,7 +178,9 @@
             'quantity': quantity
           }]
         })
-      });
+      })).json();
+
+      document.querySelector('.quantity-cart').innerHTML = newItems[0]?.quantity;
 
       let responseSection = await (await fetch('/?sections=cart-modal', {
         method: 'GET',
@@ -188,6 +190,7 @@
       })).json();
 
       document.querySelector('#cart').parentNode.innerHTML = responseSection['cart-modal'];
+
     }
   </script>
 </div>
