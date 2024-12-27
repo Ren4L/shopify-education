@@ -167,7 +167,7 @@
         }
       })
 
-      let newItems = await (await fetch(window.Shopify.routes.root + 'cart/add.js', {
+      await fetch(window.Shopify.routes.root + 'cart/add.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -178,7 +178,7 @@
             'quantity': quantity
           }]
         })
-      })).json();
+      })
 
       let responseSection = await (await fetch('/?sections=cart-modal', {
         method: 'GET',
