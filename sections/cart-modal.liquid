@@ -57,7 +57,7 @@
                     text-decoration-skip-ink: none;
                 ">
                     <div>Total Product Price</div>
-                    <div class="total_product_price">{{ cart.original_total_price }}</div>
+                    <div class="total_product_price">{{ cart.original_total_price | divided_by: 100 }}</div>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;
                     font-size: 14px;
@@ -67,7 +67,7 @@
                     text-decoration-skip-ink: none;
                 ">
                     <div>Total Discounts</div>
-                    <div class="total_discount">{{ cart.total_discount }}</div>
+                    <div class="total_discount">{{ cart.total_discount | divided_by: 100 }}</div>
                 </div>
             </div>
             <div style="
@@ -84,7 +84,7 @@
                 margin: 18px 0;
             ">
                 <div>Order Total</div>
-                <div class="total_price">{{ cart.total_price }}</div>
+                <div class="total_price">{{ cart.total_price | divided_by: 100 }}</div>
             </div>
             <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;
                     font-size: 14px;
@@ -94,7 +94,7 @@
                     text-decoration-skip-ink: none;
                 ">
                 <div>Free shipping</div>
-                <input style="width: 100%;" type="range" min="0" max="1400" value="{{ cart.total_price }}">
+                <input style="width: 100%;" type="range" min="0" max="1400" value="{{ cart.total_price | divided_by: 100 }}" disabled>
             </div>
             <a href="/checkout" style="display: block;
                 font-size: 20px; font-weight: bold;
@@ -123,9 +123,9 @@
             })
             .then(async response => {
                 let res = await response.json();
-                document.querySelector('.total_product_price').innerHTML = res.original_total_price;
-                document.querySelector('.total_discount').innerHTML = res.total_discount;
-                document.querySelector('.total_price').innerHTML = res.total_price;
+                document.querySelector('.total_product_price').innerHTML = res.original_total_price / 100;
+                document.querySelector('.total_discount').innerHTML = res.total_discount / 100;
+                document.querySelector('.total_price').innerHTML = res.total_price / 100;
                 target.parentNode.remove();
                 return res;
             })
