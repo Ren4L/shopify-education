@@ -86,7 +86,7 @@
                 <div>Order Total</div>
                 <div class="total_price">{{ cart.total_price | divided_by: 100 }}</div>
             </div>
-            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-direction: column; width: 100%;
                     font-size: 14px;
                     line-height: 16.41px;
                     text-align: left;
@@ -94,7 +94,7 @@
                     text-decoration-skip-ink: none;
                 ">
                 <div>Free shipping</div>
-                <input style="width: 100%;" type="range" min="0" max="1400" value="{{ cart.total_price | divided_by: 100 }}" disabled>
+                <input style="width: 100%;" type="range" min="0" max="10000" value="{{ cart.total_price | divided_by: 100 }}" disabled>
             </div>
             <a href="/checkout" style="display: block;
                 font-size: 20px; font-weight: bold;
