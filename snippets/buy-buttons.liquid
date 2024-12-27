@@ -88,7 +88,7 @@
               {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
+                {{ 'products.product.add_to_cart' | t }} 123
               {%- endif -%}
             </span>
             {%- render 'loading-spinner' -%}
@@ -108,7 +108,7 @@
           class="product-form__submit button button--full-width button--primary"
           disabled
         >
-          {{ 'products.product.sold_out' | t }} 123
+          {{ 'products.product.sold_out' | t }}
         </button>
       </div>
     </div>
