@@ -187,7 +187,8 @@
         }
       })).json();
 
-      document.querySelector('#cart').parentNode.innerHTML = responseSection['cart-modal'];
+      document.querySelector('#cart').remove();
+      document.body.append(responseSection['cart-modal']);
     }
   </script>
 </div>
