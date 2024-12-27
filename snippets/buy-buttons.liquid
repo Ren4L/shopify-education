@@ -160,6 +160,12 @@
           'Content-Type': 'application/json'
         }
       })).json();
+
+      response.items.forEach(el => {
+        if (el.variant_id === variantId){
+          quantity += el.quantity;
+        }
+      })
       console.log(variantId, quantity, response)
     }
   </script>
