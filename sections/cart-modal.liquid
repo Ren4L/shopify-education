@@ -96,6 +96,16 @@
                 <div>Free shipping</div>
                 <input class="free_shipping" style="width: 100%;" type="range" min="0" max="10000" value="{{ cart.total_price | divided_by: 100 }}" disabled>
             </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-direction: column; width: 100%;
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                ">
+                <div>Order note</div>
+                <textarea class="order-note"placeholder="Order note" oninput="updateNote(this)">{{ cart.note }}</textarea>
+            </div>
             <a href="/checkout" style="display: block;
                 font-size: 20px; font-weight: bold;
                 border-radius: 8px; color: white;
@@ -107,7 +117,6 @@
 </div>
 
 <script>
-    test();
     const CART_CONTAINER = document.querySelector('#cart');
 
     function ToggleCart() {
@@ -136,13 +145,13 @@
             });
     }
 
-    function test() {
+    function updateNote(target) {
         fetch(window.Shopify.routes.root + 'cart/update.js', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({"note": "test"})
+            body: JSON.stringify({"note": target?.value})
         })
             .then(async response => {
                 let res = await response.json();
