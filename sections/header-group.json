@@ -24,9 +24,11 @@
       "block_order": [
         "75ac7d05-43d4-49d1-9dda-b1a11d9e4d70"
       ],
+      "custom_css": [
+        ".header--container {position: absolute;}"
+      ],
       "settings": {
-        "menu": "main-menu",
-        "position": true
+        "menu": "main-menu"
       }
     },
     "cart-modal": {
