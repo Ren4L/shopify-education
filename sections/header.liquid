@@ -1,9 +1,8 @@
-    {%- if page.handle -%}
+    {%- if page_title == 'ren4l-education' -%}
         <div class="header--container header--container--absolute">
     {%- else -%}
         <div class="header--container">
     {%- endif -%}
-            {{ page_title }}
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
