@@ -3,6 +3,7 @@
     {%- else -%}
         <div class="header--container">
     {%- endif -%}
+            {{ page_title }}
     {% for block in section.blocks %}
         {% case block.type %}
             {% when 'logo' %}
