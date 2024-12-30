@@ -107,6 +107,7 @@
 </div>
 
 <script>
+    test();
     const CART_CONTAINER = document.querySelector('#cart');
 
     function ToggleCart() {
@@ -128,6 +129,23 @@
                 document.querySelector('.total_price').innerHTML = res.total_price / 100;
                 document.querySelector('.free_shipping').value = res.total_price / 100;
                 target.parentNode.remove();
+                return res;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    function test() {
+        fetch(window.Shopify.routes.root + 'cart/update.js', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({"note": "test"})
+        })
+            .then(async response => {
+                let res = await response.json();
                 return res;
             })
             .catch((error) => {
